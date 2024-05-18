@@ -1,6 +1,6 @@
 {
   "name": "@anuragkmr_45/encrypt-decrypt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "secure package for encryption and decryption",
   "main": "./src/index.js",
   "type": "module",
