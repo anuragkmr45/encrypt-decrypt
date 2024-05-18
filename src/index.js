@@ -10,9 +10,9 @@ const {
     defaultPbkdf2Iterations
 } = constants;
 
-const Cryptr = (secret, options = {}) => {
+const encryptDecrypt = (secret, options = {}) => {
     if (!secret || typeof secret !== 'string') {
-        throw new Error('Cryptr: secret must be a non-empty string');
+        throw new Error('encrypt decrypt: secret must be a non-empty string');
     }
 
     const {
@@ -30,7 +30,7 @@ const Cryptr = (secret, options = {}) => {
 
     const encrypt = (value) => {
         if (value == null) {
-            throw new Error('Cryptr: value must not be null or undefined');
+            throw new Error('encrypt decrypt: value must not be null or undefined');
         }
 
         const iv = crypto.randomBytes(ivLength);
@@ -46,7 +46,7 @@ const Cryptr = (secret, options = {}) => {
 
     const decrypt = (value) => {
         if (value == null) {
-            throw new Error('Cryptr: value must not be null or undefined');
+            throw new Error('encrypt decrypt: value must not be null or undefined');
         }
 
         const bufferValue = Buffer.from(String(value), encoding);
@@ -68,4 +68,4 @@ const Cryptr = (secret, options = {}) => {
     };
 };
 
-export default Cryptr;
+export default encryptDecrypt;

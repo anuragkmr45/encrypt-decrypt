@@ -1,8 +1,8 @@
 {
-  "name": "secure-encrypt",
+  "name": "@anuragkmr_45/encrypt-decrypt",
   "version": "1.0.0",
   "description": "secure package for encryption and decryption",
-  "main": "index.js",
+  "main": "./src/index.js",
   "type": "module",
   "scripts": {
     "test": "node ./test/index.test.js",
@@ -10,13 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anuragkmr45/crypto-utils.git"
+    "url": "git+https://github.com/anuragkmr45/encrypt-decrypt.git"
   },
   "keywords": [
+    "encrypt-decrypt",
     "encrypt",
     "decrypt",
     "encryption",
     "decryption",
+    "crypto",
     "cipher",
     "aes256",
     "security",
@@ -24,14 +26,19 @@
     "Base64url",
     "AES",
     "DES",
+    "DES-EDE3",
+    "DES-EDE3-CBC",
     "SHA-1",
     "SHA1",
+    "encrypt-decrypt-package",
+    "encrypt-decrypt-js",
+    "encrypt-decrypt-node",
     "SHA256"
   ],
   "author": "Anurag Kumar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anuragkmr45/crypto-utils/issues"
+    "url": "https://github.com/anuragkmr45/encrypt-decrypt/issues"
   },
-  "homepage": "https://github.com/anuragkmr45/crypto-utils#readme"
+  "homepage": "https://github.com/anuragkmr45/encrypt-decrypt#readme"
 }
